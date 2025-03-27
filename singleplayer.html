@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Single Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Single Player Mode</h1>
+        <div class="board" id="board"></div>
+        <p class="status" id="status"></p>
+        <button class="reset" onclick="resetGame()">Restart Game</button>
+        <button class="back" onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+    <script src="script.js"></script>
+    <script>setMode('singleplayer');</script>
+</body>
+</html>

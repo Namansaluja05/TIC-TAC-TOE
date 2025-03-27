@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .mode-selector {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .mode-selector button {
+            padding: 15px 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff5722;
+            color: white;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin: 10px;
+            width: 220px;
+            height: 60px;
+            text-align: center;
+            white-space: nowrap;
+        }
+        
+        .mode-selector button:hover {
+            background-color: #e64a19;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="mode-selector">
+        <button onclick="window.location.href='multiplayer.html'">Multiplayer</button>
+        <button onclick="window.location.href='singleplayer.html'">Single Player</button>
+    </div>
+</body>
+</html>
